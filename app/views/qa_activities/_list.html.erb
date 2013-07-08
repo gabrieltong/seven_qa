@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Title</th>	
     <th>Hold at</th>
     <th>Area</th>
     <th>Works</th>
@@ -17,6 +18,7 @@
 
 <% @qa_activities.each do |qa_activity| %>
   <tr>
+    <td><%= qa_activity.title %></td>	
     <td><%= qa_activity.hold_at %></td>
     <td><%= qa_activity.area %></td>
     <td><%= qa_activity.works %></td>
