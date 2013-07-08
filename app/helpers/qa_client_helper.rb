@@ -1,0 +1,2 @@
+module QaClientHelper
+end

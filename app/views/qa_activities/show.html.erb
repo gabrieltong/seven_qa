@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hold at:</b>
+  <%= @qa_activity.hold_at %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @qa_activity.area %>
+</p>
+
+<p>
+  <b>Works:</b>
+  <%= @qa_activity.works %>
+</p>
+
+<p>
+  <b>Deal:</b>
+  <%= @qa_activity.deal %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%= @qa_activity.speaker %>
+</p>
+
+<p>
+  <b>Partner:</b>
+  <%= @qa_activity.partner %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @qa_activity.contact %>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @qa_activity.sponsor %>
+</p>
+
+
+<%= link_to 'Edit', edit_qa_activity_path(@qa_activity) %> |
+<%= link_to 'Back', qa_activities_path %>
