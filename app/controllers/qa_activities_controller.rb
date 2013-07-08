@@ -15,7 +15,7 @@ class QaActivitiesController < ApplicationController
   # GET /qa_activities/1.json
   def show
     @qa_activity = QaActivity.find(params[:id])
-
+    @qa_clients = @qa_activity.qa_clients
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @qa_activity }

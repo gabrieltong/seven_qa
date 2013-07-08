@@ -3,6 +3,7 @@ class QaClientsController < ApplicationController
   # GET /qa_clients
   # GET /qa_clients.json
   def index
+    
     @qa_clients = QaClient.all
 
     respond_to do |format|
@@ -15,7 +16,7 @@ class QaClientsController < ApplicationController
   # GET /qa_clients/1.json
   def show
     @qa_client = QaClient.find(params[:id])
-
+    @qa_activities = @qa_client.qa_activities
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @qa_client }

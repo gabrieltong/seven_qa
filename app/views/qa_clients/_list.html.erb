@@ -1,0 +1,27 @@
+<h1>Listing qa_clients</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Qq</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qa_clients.each do |qa_client| %>
+  <tr>
+    <td><%= qa_client.name %></td>
+    <td><%= qa_client.phone %></td>
+    <td><%= qa_client.qq %></td>
+    <td><%= link_to 'Show', qa_client %></td>
+    <td><%= link_to 'Edit', edit_qa_client_path(qa_client) %></td>
+    <td><%= link_to 'Destroy', qa_client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qa client', new_qa_client_path %>

@@ -1,0 +1,37 @@
+<h1>Listing qa_activities</h1>
+
+<table>
+  <tr>
+    <th>Hold at</th>
+    <th>Area</th>
+    <th>Works</th>
+    <th>Deal</th>
+    <th>Speaker</th>
+    <th>Partner</th>
+    <th>Contact</th>
+    <th>Sponsor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qa_activities.each do |qa_activity| %>
+  <tr>
+    <td><%= qa_activity.hold_at %></td>
+    <td><%= qa_activity.area %></td>
+    <td><%= qa_activity.works %></td>
+    <td><%= qa_activity.deal %></td>
+    <td><%= qa_activity.speaker %></td>
+    <td><%= qa_activity.partner %></td>
+    <td><%= qa_activity.contact %></td>
+    <td><%= qa_activity.sponsor %></td>
+    <td><%= link_to 'Show', qa_activity %></td>
+    <td><%= link_to 'Edit', edit_qa_activity_path(qa_activity) %></td>
+    <td><%= link_to 'Destroy', qa_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qa activity', new_qa_activity_path %>
