@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @qa_client.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @qa_client.phone %>
+</p>
+
+<p>
+  <b>Qq:</b>
+  <%= @qa_client.qq %>
+</p>
+
+
+<%= link_to 'Edit', edit_qa_client_path(@qa_client) %> |
+<%= link_to 'Back', qa_clients_path %>
