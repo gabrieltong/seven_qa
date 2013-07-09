@@ -1,0 +1,24 @@
+zh:
+  field_phone : '电话号码'
+  field_qq : 'QQ号码'
+  client_list : '客户列表'
+  edit : '编辑'
+  activity_list : '活动列表'
+  activity_title   : '活动标题'
+  activity_hold_at : '举办时间'
+  activity_area    : '举办地点'
+  activity_works   : '工作人员'
+  activity_deal    : '活动标题'
+  activity_speaker : '活动标题'
+  activity_partner : '合作人'
+  activity_contact : '联系方式'
+  activity_sponsor : '赞助商'
+  activity_new : '创建'
+  activity_show : '显示活动'
+  activity_edit : '编辑活动'
+  activity_destroy : '删除活动'
+  activerecord:
+    attributes:
+      qa_activity:
+        hold_at : '举办时间'
+        area : '举办地点'

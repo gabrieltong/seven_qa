@@ -1,16 +1,17 @@
-<h1>Listing qa_activities</h1>
+<%- model_class = QaActivity -%>
+<h1><%= t :activity_list%></h1>
 
 <table>
   <tr>
-    <th>Title</th>	
-    <th>Hold at</th>
-    <th>Area</th>
-    <th>Works</th>
-    <th>Deal</th>
-    <th>Speaker</th>
-    <th>Partner</th>
-    <th>Contact</th>
-    <th>Sponsor</th>
+    <th><%=t(:activity_title  )	 %> </th>	
+    <th><%=t(:activity_hold_at)%>	</th>
+    <th><%=t(:activity_area   )	 %> </th>
+    <th><%=t(:activity_works  )	 %> </th>
+    <th><%=t(:activity_deal   )	 %> </th>
+    <th><%=t(:activity_speaker)%>	</th>
+    <th><%=t(:activity_partner)%>	</th>
+    <th><%=t(:activity_contact)%>	</th>
+    <th><%=t(:activity_sponsor)%>	</th>
     <th></th>
     <th></th>
     <th></th>
@@ -27,9 +28,9 @@
     <td><%= qa_activity.partner %></td>
     <td><%= qa_activity.contact %></td>
     <td><%= qa_activity.sponsor %></td>
-    <td><%= link_to 'Show', qa_activity %></td>
-    <td><%= link_to 'Edit', edit_qa_activity_path(qa_activity) %></td>
-    <td><%= link_to 'Destroy', qa_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to t(:activity_show), qa_activity %></td>
+    <td><%= link_to t(:activity_edit), edit_qa_activity_path(qa_activity) %></td>
+    <td><%= link_to t(:activity_destroy), qa_activity, method: :delete, data: { confirm: t(:text_are_you_sure) } %></td>
   </tr>
 <% end %>
 </table>

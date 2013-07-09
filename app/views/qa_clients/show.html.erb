@@ -1,20 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b><%=t :field_name %></b>
   <%= @qa_client.name %>
 </p>
 
 <p>
-  <b>Phone:</b>
+  <b><%=t :field_phone%></b>
   <%= @qa_client.phone %>
 </p>
 
 <p>
-  <b>Qq:</b>
+  <b><%=t :field_qq%></b>
   <%= @qa_client.qq %>
 </p>
 
+<%= link_to t(:edit), edit_qa_client_path(@qa_client) %> |
+<%= link_to t(:client_list), qa_clients_path %>
+
 <%=render 'qa_activities/list'%>
-<%= link_to 'Edit', edit_qa_client_path(@qa_client) %> |
-<%= link_to 'Back', qa_clients_path %>
+

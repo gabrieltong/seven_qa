@@ -1,4 +1,4 @@
-<%= form_for(@qa_client) do |f| %>
+<%= labelled_form_for @qa_client do |f| %>
   <% if @qa_client.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@qa_client.errors.count, "error") %> prohibited this qa_client from being saved:</h2>
@@ -10,20 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.number_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :qq %><br />
-    <%= f.number_field :qq %>
-  </div>
-  <div class="actions">
+	<div class="box tabular">
+  	<p>
+	    <%= f.text_field :name %>
+	  </p>
+	  <p>
+	    <%= f.number_field :phone %>
+	  </p>
+	  <p>
+	    <%= f.number_field :qq %>
+	  </p>
+	</div>
+	<div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
